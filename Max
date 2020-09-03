@@ -1,0 +1,11 @@
+local a, b, m
+
+b = 0
+repeat
+    a = tonumber(io.read())
+    if a > b then
+        m = a
+    end
+    b = a
+until not (a > 1)
+io.write(m, "\n")
